@@ -1,0 +1,24 @@
+<h1>festival works!</h1>
+
+<div style="text-align-last:justify;">
+<table border="3"> 
+    <thead>
+        <th>Name</th>
+        <th>Date</th>
+        <th>special</th>
+        <th>Holiday</th>
+    </thead>
+    <tr *ngFor="let f of listofFestival">
+        <td>{{f.name}}</td>
+        <td>{{f.date}}</td>
+        <td>{{f.special}}</td>
+        <td>{{f.days}}</td>
+    </tr>
+    <h2 *ngIf="flag">holidays are more</h2>
+
+    <h2 *ngIf="! flag">holidays are less</h2>
+
+
+</table>
+
+</div>
